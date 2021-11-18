@@ -390,7 +390,7 @@ svg path {
   height: 20px;
   left: 0;
   top: 0;
-  background: url("img/main/features/check.svg") no-repeat;
+  background: url("../img/main/features/check.svg") no-repeat;
   position: absolute;
 }
 
