@@ -209,6 +209,10 @@ svg path {
     color: $dark-blue;
     font-size: 92px;
     line-height: 108px / 92px * 100%;
+    @media screen and (max-width: 440px) {
+      font-size: 62px;
+      line-height: 108px / 62px * 100%;
+    }
   }
   &-subtitle {
     display: inline-block;
@@ -415,7 +419,7 @@ svg path {
         height: 20px;
         left: 0;
         top: 0;
-        background: url("/img/main/features/check.svg") no-repeat;
+        background: url("../img/main/features/check.svg") no-repeat;
         position: absolute;
       }
     }

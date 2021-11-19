@@ -279,6 +279,13 @@ svg path {
   line-height: 117.3913%;
 }
 
+@media screen and (max-width: 440px) {
+  .hero__left-title {
+    font-size: 62px;
+    line-height: 174.19355%;
+  }
+}
+
 .hero__left-subtitle {
   display: inline-block;
   color: #3b4a6b;
