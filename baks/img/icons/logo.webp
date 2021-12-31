@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg stroke="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+  viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip1">
+      <path d="M 0 70 L 857.339844 70 L 857.339844 574 L 0 574 Z M 0 70 " />
+    </clipPath>
+    <clipPath id="clip2">
+      <path d="M 6 772 L 851 772 L 851 1275.058594 L 6 1275.058594 Z M 6 772 " />
+    </clipPath>
+  </defs>
+</svg>
