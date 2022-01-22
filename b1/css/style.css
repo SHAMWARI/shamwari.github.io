@@ -310,49 +310,47 @@ body::-webkit-scrollbar-thumb {
 }
 .name-block__title {
   font-weight: 600;
-  line-height: 0.6666666667;
+  line-height: 0.75;
 }
 @media (min-width: 62em) {
+  .name-block__title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 62em) {
+  .name-block__title {
+    font-size: clamp( 2.25rem , 1.8928571429rem  +  1.7857142857vw , 3rem );
+  }
+}
+@media (max-width: 20em) {
   .name-block__title {
     font-size: 2.25rem;
   }
 }
-@media (min-width: 20em) and (max-width: 62em) {
-  .name-block__title {
-    font-size: clamp( 1.5rem , 1.1428571429rem  +  1.7857142857vw , 2.25rem );
-  }
-}
-@media (max-width: 20em) {
-  .name-block__title {
-    font-size: 1.5rem;
-  }
-}
 .name-block__subtitle {
-  line-height: 1.3333333333;
+  line-height: 0.75;
 }
 @media (min-width: 62em) {
   .name-block__subtitle {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 62em) {
   .name-block__subtitle {
-    font-size: clamp( 1rem , 0.9404761905rem  +  0.2976190476vw , 1.125rem );
+    font-size: clamp( 1.125rem , 0.9464285714rem  +  0.8928571429vw , 1.5rem );
   }
 }
 @media (max-width: 20em) {
   .name-block__subtitle {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
 .project-card {
   color: #000;
   background-color: #fff;
-  opacity: 0.85;
   transform: scale(0.9);
   transition: 0.4s transform ease-in-out, 0.4s opacity ease-in-out;
-  pointer-events: none;
 }
 @media (min-width: 90em) {
   .project-card {
@@ -382,21 +380,21 @@ body::-webkit-scrollbar-thumb {
 }
 .project-card__title {
   font-weight: 500;
-  line-height: 1.1666666667;
+  line-height: 0.8571428571;
 }
 @media (min-width: 90em) {
   .project-card__title {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .project-card__title {
-    font-size: clamp( 1.125rem , 1.0178571429rem  +  0.5357142857vw , 1.5rem );
+    font-size: clamp( 1.5rem , 1.4285714286rem  +  0.3571428571vw , 1.75rem );
   }
 }
 @media (max-width: 20em) {
   .project-card__title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 .project-card__title:not(:last-child) {
@@ -404,23 +402,23 @@ body::-webkit-scrollbar-thumb {
 }
 .project-card__text {
   overflow: hidden;
-  line-height: 1.3333333333;
+  line-height: 0.75;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 @media (min-width: 90em) {
   .project-card__text {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .project-card__text {
-    font-size: clamp( 1rem , 0.9642857143rem  +  0.1785714286vw , 1.125rem );
+    font-size: clamp( 1.25rem , 1.1785714286rem  +  0.3571428571vw , 1.5rem );
   }
 }
 @media (max-width: 20em) {
   .project-card__text {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 .project-card__text:not(:last-child) {
@@ -430,9 +428,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .project-card.swiper-slide-active {
-  opacity: 1;
   transform: scale(1);
-  pointer-events: auto;
 }
 
 .slider-team__scroll {
@@ -512,17 +508,17 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 62em) {
   .team-cards__name {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 20em) and (max-width: 62em) {
   .team-cards__name {
-    font-size: clamp( 1rem , 0.880952381rem  +  0.5952380952vw , 1.25rem );
+    font-size: clamp( 1.375rem , 1.1964285714rem  +  0.8928571429vw , 1.75rem );
   }
 }
 @media (max-width: 20em) {
   .team-cards__name {
-    font-size: 1rem;
+    font-size: 1.375rem;
   }
 }
 @media (min-width: 62em) {
@@ -545,17 +541,17 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 62em) {
   .team-cards__descr {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 62em) {
   .team-cards__descr {
-    font-size: clamp( 1rem , 0.9404761905rem  +  0.2976190476vw , 1.125rem );
+    font-size: clamp( 1.125rem , 0.9464285714rem  +  0.8928571429vw , 1.5rem );
   }
 }
 @media (max-width: 20em) {
   .team-cards__descr {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -579,8 +575,6 @@ body::-webkit-scrollbar-thumb {
   flex: 1 1 auto;
 }
 .header__logo {
-  position: relative;
-  z-index: 6;
   width: 3.75rem;
   height: 3.75rem;
 }
@@ -756,12 +750,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 48em) {
   .footer__title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 48em) {
   .footer__title {
-    font-size: clamp( 1rem , 0.9107142857rem  +  0.4464285714vw , 1.125rem );
+    font-size: clamp( 1rem , 0.8214285714rem  +  0.8928571429vw , 1.25rem );
   }
 }
 @media (max-width: 20em) {
@@ -779,23 +773,23 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 20em) and (max-width: 48em) {
   .footer__title span {
-    font-size: clamp( 1rem , 0.6428571429rem  +  1.7857142857vw , 1.5rem );
+    font-size: clamp( 1.125rem , 0.8571428571rem  +  1.3392857143vw , 1.5rem );
   }
 }
 @media (max-width: 20em) {
   .footer__title span {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 90em) {
   .page_home {
     margin-bottom: 3.75rem;
   }
 }
-@media (min-width: 20em) and (max-width: 62em) {
+@media (min-width: 20em) and (max-width: 90em) {
   .page_home {
-    margin-bottom: clamp( 1.875rem , 0.9821428571rem  +  4.4642857143vw , 3.75rem );
+    margin-bottom: clamp( 1.875rem , 1.3392857143rem  +  2.6785714286vw , 3.75rem );
   }
 }
 @media (max-width: 20em) {
@@ -803,14 +797,14 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1.875rem;
   }
 }
-@media (min-width: 62em) {
+@media (min-width: 90em) {
   .page__hero {
     padding-top: 8.75rem;
   }
 }
-@media (min-width: 20em) and (max-width: 62em) {
+@media (min-width: 20em) and (max-width: 90em) {
   .page__hero {
-    padding-top: clamp( 6.25rem , 5.0595238095rem  +  5.9523809524vw , 8.75rem );
+    padding-top: clamp( 6.25rem , 5.5357142857rem  +  3.5714285714vw , 8.75rem );
   }
 }
 @media (max-width: 20em) {
@@ -818,14 +812,14 @@ body::-webkit-scrollbar-thumb {
     padding-top: 6.25rem;
   }
 }
-@media (min-width: 62em) {
+@media (min-width: 90em) {
   .page__hero {
     padding-bottom: 6.25rem;
   }
 }
-@media (min-width: 20em) and (max-width: 62em) {
+@media (min-width: 20em) and (max-width: 90em) {
   .page__hero {
-    padding-bottom: clamp( 1.25rem , -1.130952381rem  +  11.9047619048vw , 6.25rem );
+    padding-bottom: clamp( 1.25rem , -0.1785714286rem  +  7.1428571429vw , 6.25rem );
   }
 }
 @media (max-width: 20em) {
@@ -961,7 +955,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .hero__right {
-  width: 40%;
+  width: 60%;
   height: 100%;
 }
 @media (max-width: 61.99875em) {
@@ -1039,7 +1033,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .hero__img-ibg {
-  padding-bottom: 80%;
+  padding-bottom: 60%;
 }
 @media (max-width: 61.99875em) {
   .hero__img-ibg {
@@ -1088,7 +1082,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .news-block__right {
-  width: 40%;
+  width: 60%;
   height: 100%;
 }
 @media (max-width: 61.99875em) {
@@ -1130,9 +1124,6 @@ body::-webkit-scrollbar-thumb {
   .news-block__title:not(:last-child) {
     margin-bottom: 0.625rem;
   }
-}
-.news-block__text {
-  font-weight: 300;
 }
 @media (min-width: 90em) {
   .news-block__text {
@@ -1356,6 +1347,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.project {
+  color: #fff;
+}
 .project__title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -1378,6 +1372,9 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.project-about {
+  color: #000;
+}
 @media (min-width: 90em) {
   .project-about {
     padding-top: 3.75rem;
@@ -1475,8 +1472,23 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1.25rem;
   }
 }
+@media (min-width: 90em) {
+  .project-about__text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 90em) {
+  .project-about__text {
+    font-size: clamp( 1.125rem , 1.0178571429rem  +  0.5357142857vw , 1.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .project-about__text {
+    font-size: 1.125rem;
+  }
+}
 .project-about__right {
-  width: 40%;
+  width: 60%;
   height: 100%;
 }
 @media (max-width: 61.99875em) {
@@ -1485,7 +1497,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .project-about__img-ibg {
-  padding-bottom: 80%;
+  padding-bottom: 60%;
 }
 @media (max-width: 61.99875em) {
   .project-about__img-ibg {

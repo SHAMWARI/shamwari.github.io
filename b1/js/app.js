@@ -3620,8 +3620,6 @@
       document.querySelector(".cards-project") &&
         new se(".cards-project__slider", {
           modules: [ne],
-          centeredSlides: !0,
-          centeredSlidesBounds: !0,
           autoplay: { delay: 2500, disableOnInteraction: !1 },
           slidesPerView: 3,
           spaceBetween: 30,
