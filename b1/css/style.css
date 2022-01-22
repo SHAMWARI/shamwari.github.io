@@ -668,17 +668,17 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 90em) {
   .menu__link {
-    font-size: 5.25rem;
+    font-size: 5.375rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .menu__link {
-    font-size: clamp( 1.875rem , 0.9107142857rem  +  4.8214285714vw , 5.25rem );
+    font-size: clamp( 2.25rem , 1.3571428571rem  +  4.4642857143vw , 5.375rem );
   }
 }
 @media (max-width: 20em) {
   .menu__link {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
   }
 }
 .menu__link::before {
@@ -976,12 +976,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .hero__title {
-    font-size: clamp( 1.375rem , 1.125rem  +  1.25vw , 2.25rem );
+    font-size: clamp( 1.5rem , 1.2857142857rem  +  1.0714285714vw , 2.25rem );
   }
 }
 @media (max-width: 20em) {
   .hero__title {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 90em) {
@@ -1000,21 +1000,21 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .hero__text {
-  line-height: 1.0909090909;
+  line-height: 0.8571428571;
 }
 @media (min-width: 90em) {
   .hero__text {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .hero__text {
-    font-size: clamp( 1.125rem , 1.0535714286rem  +  0.3571428571vw , 1.375rem );
+    font-size: clamp( 1.25rem , 1.1785714286rem  +  0.3571428571vw , 1.5rem );
   }
 }
 @media (max-width: 20em) {
   .hero__text {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 90em) {
@@ -1373,6 +1373,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-about {
+  font-family: "ProximaNovaExCn", sans-serif;
   color: #000;
 }
 @media (min-width: 90em) {
@@ -1425,12 +1426,12 @@ body::-webkit-scrollbar-thumb {
 }
 @media (min-width: 20em) and (max-width: 90em) {
   .project-about__title {
-    font-size: clamp( 1.125rem , 0.5892857143rem  +  2.6785714286vw , 3rem );
+    font-size: clamp( 1.5rem , 1.0714285714rem  +  2.1428571429vw , 3rem );
   }
 }
 @media (max-width: 20em) {
   .project-about__title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 90em) {

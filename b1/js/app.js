@@ -3599,6 +3599,7 @@
               spaceBetween: 0,
               scrollbar: { dragSize: 40 },
             },
+            475: { slidesPerView: 2, spaceBetween: 20 },
             768: {
               slidesPerView: 3,
               spaceBetween: 20,
@@ -3625,8 +3626,13 @@
           spaceBetween: 30,
           speed: 800,
           breakpoints: {
-            320: { slidesPerView: 1, spaceBetween: 0 },
-            768: { slidesPerView: 2, spaceBetween: 20 },
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+              centeredSlides: !0,
+              centeredSlidesBounds: !1,
+            },
             992: {
               slidesPerView: 3,
               spaceBetween: 20,
