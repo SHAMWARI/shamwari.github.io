@@ -152,6 +152,10 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   touch-action: none;
 }
+.loaded body {
+  opacity: 1;
+}
+
 .wrapper {
   position: relative;
   z-index: 5;
@@ -174,9 +178,9 @@ body::-webkit-scrollbar-thumb {
 Снипет (HTML): cnt
 */
 [class*=__container] {
+  margin: 0 auto;
   max-width: 88.75rem;
   box-sizing: content-box;
-  margin: 0 auto;
   padding: 0 0.625rem;
 }
 
@@ -373,31 +377,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project-card {
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
   color: #000;
   background-color: #fff;
   transform: scale(0.9);
-  transition: 0.4s transform ease-in-out, 0.4s opacity ease-in-out;
-}
-@media (min-width: 90em) {
-  .project-card {
-    padding: 1.25rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 90em) {
-  .project-card {
-    padding: clamp( 0.625rem , 0.4464285714rem  +  0.8928571429vw , 1.25rem );
-  }
-}
-@media (max-width: 20em) {
-  .project-card {
-    padding: 0.625rem;
-  }
+  transition: 0.4s transform linear;
 }
 .project-card__img-ibg {
   padding-bottom: 100%;
 }
 .project-card__img-ibg:not(:last-child) {
   margin-bottom: 1.25rem;
+}
+.project-card__img-ibg img {
+  border-radius: 0.625rem;
 }
 @media (max-width: 47.99875em) {
   .project-card__img-ibg {
@@ -770,45 +764,25 @@ body::-webkit-scrollbar-thumb {
 }
 .footer__copy {
   padding: 1.25rem;
+  text-align: center;
 }
-.footer__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
+.footer span {
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 @media (min-width: 90em) {
-  .footer__title {
-    font-size: 1.375rem;
+  .footer span {
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 90em) {
-  .footer__title {
-    font-size: clamp( 1.25rem , 1.2142857143rem  +  0.1785714286vw , 1.375rem );
+  .footer span {
+    font-size: clamp( 1.5rem , 1.2857142857rem  +  1.0714285714vw , 2.25rem );
   }
 }
 @media (max-width: 20em) {
-  .footer__title {
-    font-size: 1.25rem;
-  }
-}
-.footer__title span {
-  font-weight: 600;
-}
-@media (min-width: 90em) {
-  .footer__title span {
-    font-size: 1.75rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 90em) {
-  .footer__title span {
-    font-size: clamp( 1.5rem , 1.4285714286rem  +  0.3571428571vw , 1.75rem );
-  }
-}
-@media (max-width: 20em) {
-  .footer__title span {
+  .footer span {
     font-size: 1.5rem;
   }
 }
@@ -981,7 +955,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   width: 100%;
   height: 100%;
-  box-shadow: inset 0 0 15.625rem #000;
+  box-shadow: inset 0 0 12.5rem #000;
 }
 
 .hero {
