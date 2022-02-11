@@ -349,12 +349,12 @@ a._link:hover {
 }
 @media (min-width: 89.375em) {
   .block-quote {
-    padding-left: 1.5625rem;
+    padding-left: 1.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
   .block-quote {
-    padding-left: clamp( 0.9375rem , 0.7573198198rem  +  0.9009009009vw , 1.5625rem );
+    padding-left: clamp( 0.9375rem , 0.8474099099rem  +  0.4504504505vw , 1.25rem );
   }
 }
 @media (max-width: 20em) {
@@ -382,6 +382,21 @@ a._link:hover {
   font-size: 1.125rem;
   line-height: 1.1111111111;
 }
+@media (min-width: 89.375em) {
+  .block-quote h5 {
+    padding-left: 1.0625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 89.375em) {
+  .block-quote h5 {
+    padding-left: clamp( 0.625rem , 0.4988738739rem  +  0.6306306306vw , 1.0625rem );
+  }
+}
+@media (max-width: 20em) {
+  .block-quote h5 {
+    padding-left: 0.625rem;
+  }
+}
 .block-quote h5:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
@@ -403,7 +418,7 @@ a._link:hover {
 .block-quote__list li {
   position: relative;
   display: block;
-  padding-left: 1.25rem;
+  padding-left: 1.0625rem;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.125;
@@ -1887,32 +1902,32 @@ a._link:hover {
 }
 @media (min-width: 89.375em) {
   .lists-features__section:not(:last-child) {
-    margin-bottom: 3.75rem;
+    margin-bottom: 4.375rem;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
   .lists-features__section:not(:last-child) {
-    margin-bottom: clamp( 2.5rem , 2.1396396396rem  +  1.8018018018vw , 3.75rem );
+    margin-bottom: clamp( 3.125rem , 2.7646396396rem  +  1.8018018018vw , 4.375rem );
   }
 }
 @media (max-width: 20em) {
   .lists-features__section:not(:last-child) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3.125rem;
   }
 }
 @media (min-width: 89.375em) {
   .lists-features__section-title:not(:last-child) {
-    margin-bottom: 3.75rem;
+    margin-bottom: 3.125rem;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
   .lists-features__section-title:not(:last-child) {
-    margin-bottom: clamp( 2.5rem , 2.1396396396rem  +  1.8018018018vw , 3.75rem );
+    margin-bottom: clamp( 1.875rem , 1.5146396396rem  +  1.8018018018vw , 3.125rem );
   }
 }
 @media (max-width: 20em) {
   .lists-features__section-title:not(:last-child) {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.875rem;
   }
 }
 @media (min-width: 89.375em) {
@@ -1966,20 +1981,8 @@ a._link:hover {
   text-align: center;
   background-color: #a46bff;
 }
-@media (min-width: 89.375em) {
-  .lists-features__column > li:not(:last-child) {
-    margin-bottom: 1.25rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 89.375em) {
-  .lists-features__column > li:not(:last-child) {
-    margin-bottom: clamp( 0.9375rem , 0.8474099099rem  +  0.4504504505vw , 1.25rem );
-  }
-}
-@media (max-width: 20em) {
-  .lists-features__column > li:not(:last-child) {
-    margin-bottom: 0.9375rem;
-  }
+.lists-features__column > li:not(:last-child) {
+  margin-bottom: 0.9375rem;
 }
 @media (max-width: 47.99875em) and (min-width: 89.375em) {
   .lists-features__column:not(:last-child) {
@@ -1997,18 +2000,33 @@ a._link:hover {
   }
 }
 @media (min-width: 89.375em) {
+  .lists-features__quote-block {
+    margin-top: 1.5625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 89.375em) {
+  .lists-features__quote-block {
+    margin-top: clamp( 1.25rem , 1.1599099099rem  +  0.4504504505vw , 1.5625rem );
+  }
+}
+@media (max-width: 20em) {
+  .lists-features__quote-block {
+    margin-top: 1.25rem;
+  }
+}
+@media (min-width: 89.375em) {
   .lists-features__quote-block:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
   .lists-features__quote-block:not(:last-child) {
-    margin-bottom: clamp( 1.25rem , 1.0698198198rem  +  0.9009009009vw , 1.875rem );
+    margin-bottom: clamp( 1.875rem , 1.6948198198rem  +  0.9009009009vw , 2.5rem );
   }
 }
 @media (max-width: 20em) {
   .lists-features__quote-block:not(:last-child) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.875rem;
   }
 }
 /**
