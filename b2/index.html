@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220215194321">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220219110557">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 		<!-- Главная страница -->
 		<main class="page">
 			<!-- Главный блок -->
-			<section class="page__main-block main-block" data-fullscreen data-watch data-watch-once>
+			<section class="page__main-block main-block" data-fullscreen>
 				<div class="main-block__container">
 					<div class="main-block__body block-about">
 						<div class="block-about__main">
@@ -218,47 +218,46 @@
 			<!-- Блог -->
 			<section class="page__news-about news-about">
 				<div class="news-about__container">
-					<div class="news-about__title _title" data-watch data-watch-once><span>новости</span></div>
+					<div class="news-about__title title" data-watch data-watch-once><span>новости</span></div>
 					<div class="news-about__body about-news">
-						<a href="" class="news-about__card about-news__card about-news__card_first" data-watch data-watch-once>
-							<div class="about-news__image-ibg">
-								<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
-							</div>
-							<div class="about-news__descr">
-								<div class="about-news__title">Какой-то заголовок</div>
-								<div class="about-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-									odio in modi
-									quod reprehenderit iste cum</div>
-								<div class="about-news__date">10 февраля 22 г.</div>
-							</div>
-						</a>
-						<a href="" class="news-about__card about-news__card about-news__card_second" data-watch data-watch-once>
-							<div class="about-news__image-ibg">
-								<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
-							</div>
-							<div class="news-about__descr">
-								<div class="about-news__title">Какой-то загловок 2</div>
-								<div class="about-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-								<div class="about-news__date">11 февраля 22 г.</div>
-							</div>
-						</a>
-						<a href="" class="news-about__card about-news__card about-news__card_thirth" data-watch data-watch-once>
-							<div class="about-news__image-ibg">
-								<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
-							</div>
-							<div class="news-about__descr">
-								<div class="about-news__title">Какой-то заголовок 3</div>
-								<div class="about-news__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-								<div class="about-news__date">12 февраля 22 г.</div>
-							</div>
-						</a>
+						<div class="about-news__column about-news__column_one">
+							<a href="" class="about-news__card about-news__card_first" data-watch data-watch-once>
+								<div class="about-news__image-ibg">
+									<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
+								</div>
+								<div class="about-news__descr">
+									<div class="about-news__title">Какой-то заголовок</div>
+									<div class="about-news__date">10 февраля 22 г.</div>
+								</div>
+							</a>
+						</div>
+						<div class="about-news__column about-news__column_two">
+							<a href="" class="about-news__card about-news__card_second" data-watch data-watch-once>
+								<div class="about-news__image-ibg">
+									<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
+								</div>
+								<div class="about-news__descr">
+									<div class="about-news__title">Какой-то загловок 2</div>
+									<div class="about-news__date">11 февраля 22 г.</div>
+								</div>
+							</a>
+							<a href="" class="about-news__card about-news__card_thirth" data-watch data-watch-once>
+								<div class="about-news__image-ibg">
+									<picture><source data-srcset="img/hero/background.webp" type="image/webp"><img class="_lazy" data-src="img/hero/background.jpg" alt=""></picture>
+								</div>
+								<div class="about-news__descr">
+									<div class="about-news__title">Какой-то заголовок 3</div>
+									<div class="about-news__date">12 февраля 22 г.</div>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- Проекты -->
-			<section class="page__projects projects _centered">
+			<section class="page__projects projects">
 				<div class="projects__container">
-					<h2 class="projects__title _title" data-watch data-watch-once><span>Наши проекты</span></h2>
+					<h2 class="projects__title title" data-watch data-watch-once><span>Наши проекты</span></h2>
 					<div class="projects__body body-projects">
 						<a href="" class="body-projects__card" data-watch data-watch-once>
 							<div class="body-projects__image-ibg">
@@ -293,7 +292,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220215194321"></script>
+	<script src="js/app.min.js?_v=20220219110557"></script>
 </body>
 
 </html>
