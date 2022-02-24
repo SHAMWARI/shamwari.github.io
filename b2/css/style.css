@@ -643,10 +643,10 @@ body ::selection {
 .lists-features__item:not(:last-child) {
   margin-bottom: 0.9375rem;
 }
-.lists-features__item_channel {
+.lists-features__item.lists-features__item_channel {
   padding: 0;
 }
-.lists-features__item_channel::before {
+.lists-features__item.lists-features__item_channel::before {
   display: none;
 }
 
