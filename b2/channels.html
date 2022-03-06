@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220306144939">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220306163107">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,8 +51,8 @@
 						</nav>
 						<div data-tabs-body class="tabs__content">
 							<div class="tabs__body">
-								<div class="descr-channels__columns lists-features lists-features_channels">
-									<div class="lists-features__section">
+								<div class="descr-channels__column lists-features lists-features_channels">
+									<ul class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title">
 											<span>ASIRIX — Discord-сообщество без границ.</span>
 										</h2>
@@ -66,12 +66,12 @@
 												<li>&mdash;&nbsp;<a href="#" class="button-link" data-tippy-content="Переход в дискорд">Кланы</a></li>
 											</ul>
 										</blockquote>
-									</div>
+									</ul>
 								</div>
 							</div>
 							<div class="tabs__body">
-								<div class="descr-channels__columns lists-features lists-features_channels">
-									<div class="lists-features__section">
+								<div class="descr-channels__column lists-features lists-features_channels">
+									<ul class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title">
 											<span>💰 &mdash; Экономика:</span>
 										</h2>
@@ -81,47 +81,50 @@
 										<blockquote class="lists-features__quote-block block-quote">
 											<h4 class="block-quote__title">Содержание:</h4>
 											<ul class="block-quote__list">
-												<li>Начало</li>
-												<li>Возможности</li>
-												<li>Заработок</li>
+												<li><a href="#" data-goto-header data-goto="#start" class="link link_color-none">Начало</a></li>
+												<li>
+													<a href="#" data-goto-header data-goto="#facilities" class="link link_color-none">Возможности</a>
+												</li>
+												<li><a href="#" data-goto-header data-goto="#income" class="link link_color-none">Заработок</a></li>
 											</ul>
 										</blockquote>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="start" class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title title_small">
 											<span>Начало</span>
 										</h2>
 										<li class="lists-features__item lists-features__item_channel">
-											<svg class="starcoin" data-tippy-content="Старкоин">
-												<use xlink:href="img/icons/starcoin.svg#starcoin"></use>
-											</svg>
+											<span class="starcoin">
+												<img src="img/icons/starcoin.svg" alt="Старкоин" data-tippy-content="Старкоин" />
+											</span>
 											&mdash;&nbsp;основная валюта сообщества.
 										</li>
 										<li class="lists-features__item lists-features__item_channel">
-											<svg class="amethyst" data-tippy-content="Аметист">
-												<use xlink:href="img/icons/amethyst.svg#amethyst"></use>
-											</svg>
+											<span class="amethyst">
+												<img src="img/icons/amethyst.svg" alt="Аметист" data-tippy-content="Аметист" />
+											</span>
 											&mdash; особая валюта сообщества. !donate
 										</li>
 										<li class="lists-features__item lists-features__item_channel">
 											<strong>[1
-												<svg class="amethyst">
-													<use xlink:href="img/icons/amethyst.svg#amethyst"></use>
-												</svg>
+												<span class="amethyst">
+													<img src="img/icons/amethyst.svg" alt="Аметист" data-tippy-content="Аметист" />
+												</span>
 												= 1000
-												<svg class="starcoin">
-													<use xlink:href="img/icons/starcoin.svg#starcoin"></use>
-												</svg>]
+												<span class="starcoin">
+													<img src="img/icons/starcoin.svg" alt="Старкоин" data-tippy-content="Старкоин" />
+												</span>
+												>]
 											</strong>
 										</li>
 										<li class="lists-features__item lists-features__item_channel">
 											Стартовый капитал пользователя — 1000
-											<svg class="starcoin">
-												<use xlink:href="img/icons/starcoin.svg#starcoin" />
-											</svg>
+											<span class="starcoin">
+												<img src="img/icons/starcoin.svg" alt="Старкоин" data-tippy-content="Старкоин" />
+											</span>
 										</li>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="facilities" class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title title_small">
 											<span>Возможности</span>
 										</h2>
@@ -135,8 +138,8 @@
 										<li class="lists-features__item">!items&nbsp;&mdash; просмотреть список существующих предметов.</li>
 										<li class="lists-features__item">!pay&nbsp;&mdash; осуществить перевод на&nbsp;счёт пользователя.</li>
 										<li class="lists-features__item">!trade&nbsp;&mdash; продать/обменять предмет пользователю.</li>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="income" class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title title_small">
 											<span>Заработок</span>
 										</h2>
@@ -170,21 +173,22 @@
 											</ul>
 											<p class="block-quote__text">
 												Победа в сражениях асиксов вознаграждается. [2500-15000
-												<svg class="starcoin">
-													<use xlink:href="img/icons/starcoin.svg#starcoin" />
-												</svg>
+												<span class="starcoin">
+													<img src="img/icons/starcoin.svg" alt="Старкоин" data-tippy-content="Старкоин" />
+												</span>
 												| 0-4
-												<svg class="amethyst">
-													<use xlink:href="img/icons/amethyst.svg#amethyst" />
-												</svg>]
+												<span class="amethyst">
+													<img src="img/icons/amethyst.svg" alt="Аметист" data-tippy-content="Аметист" />
+												</span>
+												>]
 											</p>
 										</blockquote>
-									</div>
+									</ul>
 								</div>
 							</div>
 							<div class="tabs__body">
-								<div class="descr-channels__columns lists-features lists-features_channels">
-									<div class="lists-features__section">
+								<div class="descr-channels__column lists-features lists-features_channels">
+									<ul class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title">
 											<span>⚖️ &mdash; Модерация</span>
 										</h2>
@@ -194,11 +198,11 @@
 										<blockquote class="lists-features__quote-block block-quote">
 											<h4 class="block-quote__title">Содержание:</h4>
 											<ul class="block-quote__list">
-												<li>Терминология</li>
+												<li><a href="#" data-goto-header data-goto="#terminology" class="link link_color-none">Терминология</a></li>
 											</ul>
 										</blockquote>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="terminology" class="descr-channels__section lists-features__section">
 										<li class="lists-features__item lists-features__item_channel title title_small">
 											<span>Терминология</span>
 										</li>
@@ -221,12 +225,12 @@
 												</li>
 											</ul>
 										</blockquote>
-									</div>
+									</ul>
 								</div>
 							</div>
 							<div class="tabs__body">
-								<div class="descr-channels__columns lists-features lists-features_channels">
-									<div class="lists-features__section">
+								<div class="descr-channels__column lists-features lists-features_channels">
+									<ul class="descr-channels__section lists-features__section">
 										<h2 class="lists-features__section-title title">
 											<span>🦖 &mdash; Асиксы</span>
 										</h2>
@@ -236,13 +240,15 @@
 										<blockquote class="lists-features__quote-block block-quote">
 											<h4 class="block-quote__title">Содержание:</h4>
 											<ul class="block-quote__list">
-												<li>Начало</li>
-												<li>Уход</li>
-												<li>Битвы</li>
+												<li><a href="#" data-goto-header data-goto="#start-two" class="link link_color-none">Начало</a></li>
+												<li>
+													<a href="#" data-goto-header data-goto="#care" class="link link_color-none">Уход</a>
+												</li>
+												<li><a href="#" data-goto-header data-goto="#battles" class="link link_color-none">Битвы</a></li>
 											</ul>
 										</blockquote>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="start-two" class="descr-channels__section lists-features__section">
 										<li class="lists-features__item lists-features__item_channel title title_small">
 											<span>Начало</span>
 										</li>
@@ -265,8 +271,8 @@
 												</li>
 											</ul>
 										</blockquote>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="care" class="descr-channels__section lists-features__section">
 										<li class="lists-features__item lists-features__item_channel title title_small">
 											<span>Уход</span>
 										</li>
@@ -293,8 +299,8 @@
 												</p>
 											</ul>
 										</blockquote>
-									</div>
-									<div class="lists-features__section">
+									</ul>
+									<ul id="battles" class="descr-channels__section lists-features__section">
 										<li class="lists-features__item lists-features__item_channel title title_small">
 											<span>Битвы </span>
 										</li>
@@ -310,7 +316,7 @@
 												<li>Пользователь может использовать предмет в качестве хода, выбрав его из панели Инвентарь.</li>
 											</ul>
 										</blockquote>
-									</div>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -341,7 +347,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20220306144939"></script>
+	<script src="js/app.min.js?_v=20220306163107"></script>
 </body>
 
 </html>
