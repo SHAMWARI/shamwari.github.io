@@ -13364,7 +13364,6 @@
               observeParents: !0,
               slidesPerView: 3,
               spaceBetween: 30,
-              speed: 500,
               lazy: !0,
               lazy: { loadPrevNext: !0 },
               breakpoints: {
@@ -17207,7 +17206,7 @@
           e &&
             e.addEventListener("click", function (e) {
               s &&
-                (((e = 500) => {
+                (((e = 600) => {
                   document.documentElement.classList.contains("lock")
                     ? o(e)
                     : a(e);
