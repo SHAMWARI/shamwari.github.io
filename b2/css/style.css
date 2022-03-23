@@ -2303,6 +2303,11 @@ a.link:hover {
     gap: 1.875rem;
   }
 }
+@media (max-width: 61.99875em) {
+  .news__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .news__card {
   display: flex;
   flex-direction: column;
