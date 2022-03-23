@@ -2286,6 +2286,7 @@ a.link:hover {
 .news__body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0 -0.625rem;
   color: #fff;
 }
 @media (min-width: 89.375em) {
