@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220323181304">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220408161938">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,15 +25,17 @@
 						<div class="icon-menu__title">МЕНЮ</div><span></span>
 					</button>
 					<div class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
-							<li class="menu__item"><a href="channels.html" class="menu__link">Каналы</a></li>
-							<li class="menu__item"><a href="team.html" class="menu__link">Команда</a></li>
-							<li class="menu__item"><a href="projects.html" class="menu__link">Проекты</a></li>
-							<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
-							<li class="menu__item"><a href="rules.html" class="menu__link">Правила</a></li>
-							<li class="menu__item"><a href="support.html" class="menu__link">Тех поддержка</a></li>
-						</ul>
+						<div class="menu__container">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="channels.html" class="menu__link">Каналы</a></li>
+								<li class="menu__item"><a href="team.html" class="menu__link">Команда</a></li>
+								<li class="menu__item"><a href="projects.html" class="menu__link">Проекты</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="rules.html" class="menu__link">Правила</a></li>
+								<li class="menu__item"><a href="support.html" class="menu__link">Тех поддержка</a></li>
+							</ul>
+						</div>
 						</nav>
 					</div>
 				</div>
@@ -44,6 +46,7 @@
 			<section class="page__features features">
 				<div class="features__container">
 					<div class="features__columns lists-features">
+						<!-- Секция -->
 						<ul class="features__section lists-features__section">
 							<h3 class="lists-features__section-title title title_small"><span>💬 - Общение</span></h3>
 							<li class="lists-features__item">
@@ -165,6 +168,7 @@
 								</ul>
 							</blockquote>
 						</ul>
+						<!-- Секция -->
 						<ul class="features__section lists-features__section">
 							<h3 class="lists-features__section-title title title_small"><span>🤖 - Бот</span></h3>
 							<li class="lists-features__item">
@@ -224,12 +228,14 @@
 								<ul class="block-quote__list">
 									<li>
 										Задействованное Вами программное обеспечение также нарушает
-										<a target="_blank" target="_blank" class="link" href="https://discord.com/terms">Условия использования Discord</a>, что может обернуться перманентной блокировкой аккаунта со стороны Discord
+										<a target="_blank" target="_blank" class="link" href="https://discord.com/terms">Условия использования Discord</a>,
+										что может обернуться перманентной блокировкой аккаунта со стороны Discord
 									</li>
 									<li>Весь прогресс, полученный в результате автоматизации, будет аннулирован.</li>
 								</ul>
 							</blockquote>
 						</ul>
+						<!-- Секция -->
 						<ul class="features__section lists-features__section">
 							<h3 class="lists-features__section-title title title_small"><span>🎯 - Мероприятия</span></h3>
 							<li class="lists-features__item">
@@ -269,27 +275,15 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__contacts contacts contacts_footer">
-					<a href="" class="contacts__item contacts_vk">вконтакте</a>
-					<a href="" class="contacts__item contacts_tg">телеграм</a>
-					<a href="" class="contacts__item contacts_discord">дискорд</a>
+					<a href="" class="contacts__item contacts__item_vk">вконтакте</a>
+					<a href="" class="contacts__item contacts__item_tg">телеграм</a>
+					<a href="" class="contacts__item contacts__item_discord">дискорд</a>
 				</div>
 				<div class="footer__title title title_small"><span>Все права защищены</span></div>
 			</div>
 		</footer>
-
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
-	<script src="js/app.min.js?_v=20220323181304"></script>
+	<script src="js/app.min.js?_v=20220408161938"></script>
 </body>
 
 </html>
