@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220410004835">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220419160944">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-scroll>
 			<div class="header__container">
 				<div class="header__menu menu">
 					<a href="#" class="header__logo logo-header"><img data-src="img/header/logo.svg" alt="Лого"></a>
@@ -31,6 +31,11 @@
 						<div class="menu__footer footer-menu">
 							<a href="#" class="footer-menu__logo logo-header"><img data-src="img/header/logo.svg" alt="Лого"></a>
 							<div class="footer-menu__title">Инженерные изыскания в строительстве</div>
+							<ul class="footer-menu__actions menu-actions">
+								<li class="menu-actions__item"><a href="tel:+74957550229" class="menu-actions__link _icon-phone">
+										<span>+7 (495)755-02-29</span></a>
+								</li>
+							</ul>
 							<ul class="footer-menu__socials">
 								<li class="footer-menu__item"><a href="#" class="footer-menu__link _icon-facebook"></a></li>
 								<li class="footer-menu__item"><a href="#" class="footer-menu__link _icon-vk"></a></li>
@@ -38,8 +43,9 @@
 							</ul>
 						</div>
 					</nav>
-					<ul class="menu__actions menu-actions" data-da=".menu__footer,767.98,2">
-						<li class="menu-actions__item"><a href="tel:+74957550229" class="menu-actions__link _icon-phone">+7 (495) 755-02-29</a></li>
+					<ul class="menu__actions menu-actions">
+						<li class="menu-actions__item"><a href="tel:+74957550229" class="menu-actions__link _icon-phone"><span>+7 (495) 755-02-29</span></a>
+						</li>
 					</ul>
 					<div class="menu__burger burger-menu">
 						<div class="burger-menu__title">Меню</div>
@@ -66,36 +72,130 @@
 										<a href="#" class="footer-hero-slide__button button">Посмотреть услуги</a>
 										<a href="#" class="footer-hero-slide__button button button_yellow">Наши проекты</a>
 									</div>
-									<div class="footer-hero-slide__text text text_sub-title text_orange" data-swiper-parallax="-100">
+									<div class="footer-hero-slide__text text text_sub-title text_orange" data-da=".slide-hero__body,767.98,last" data-swiper-parallax="-200">
 										Выполняем инженерные изыскания в строительстве с 1988 года
 									</div>
 								</div>
 							</div>
 							<div class="slide-hero__img-ibg">
-								<picture><source srcset="img/hero/1.webp" type="image/webp"><img src="img/hero/1.png" alt="Мост"></picture>
+								<picture><source data-srcset="img/hero/1.webp" type="image/webp"><img data-src="img/hero/1.png" alt="Мост"></picture>
 							</div>
 						</div>
 						<div class="hero__slide slide-hero swiper-slide">
 							<div class="slide-hero__container">
-								<div class="slide-hero__body">
-									<div class="slide-hero__title title title_big" data-swiper-parallax="-400">Инженерные изыскания в строительстве</div>
-									<div class="slide-hero__text text text_big" data-swiper-parallax="-300">С равным успехом мы работаем на участках
-										строительства технически сложных и
-										ответственных
-										объектов, и типовых сооружений. Все работы проходят государственную экспертизу.</div>
+								<div class="slide-hero__body slide-hero__body_list">
+									<div class="slide-hero__title title title_big" data-swiper-parallax="-400">Геологические изыскания</div>
+									<ul class="slide-hero__list list-hero-slide" data-swiper-parallax="-500">
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">Бурение инженерно-геологических скважин</span>
+												<span class="list-hero-slide__text">от 600₽ / п.м</span>
+											</div>
+										</li>
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">Штамповые испытания грунтов</span>
+												<span class="list-hero-slide__text">от 18 000₽ / опыт</span>
+											</div>
+										</li>
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">Лабораторные испытания со скидкой от 50% (с понижающим коэффициентом от
+													0.5)</span>
+											</div>
+										</li>
+									</ul>
 								</div>
 								<div class="slide-hero__footer footer-hero-slide">
 									<div class="footer-hero-slide__buttons" data-swiper-parallax="-200">
-										<a href="#" class="footer-hero-slide__button button">Посмотреть услуги</a>
-										<a href="#" class="footer-hero-slide__button button button_yellow">Наши проекты</a>
-									</div>
-									<div class="footer-hero-slide__text text text_sub-title text_orange" data-swiper-parallax="-100">
-										Выполняем инженерные изыскания в строительстве с 1988 года
+										<a href="#" class="footer-hero-slide__button button">Подробнее</a>
+										<a href="#" class="footer-hero-slide__button button button_yellow">Заказать обратный звонок</a>
 									</div>
 								</div>
 							</div>
 							<div class="slide-hero__img-ibg">
-								<picture><source srcset="img/hero/1.webp" type="image/webp"><img src="img/hero/1.png" alt="Мост"></picture>
+								<picture><source data-srcset="img/hero/2.webp" type="image/webp"><img data-src="img/hero/2.png" alt="Мост"></picture>
+							</div>
+						</div>
+						<div class="hero__slide slide-hero swiper-slide">
+							<div class="slide-hero__container">
+								<div class="slide-hero__body slide-hero__body">
+									<div class="slide-hero__title title title_big" data-swiper-parallax="-400">Экологические изыскания</div>
+									<ul class="slide-hero__list list-hero-slide list-hero-slide_two" data-swiper-parallax="-500">
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">0.5 Га</span>
+												<span class="list-hero-slide__line"></span>
+												<span class="list-hero-slide__text">от 50 000₽</span>
+											</div>
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">1 Га</span>
+												<span class="list-hero-slide__line"></span>
+												<span class="list-hero-slide__text">от 70 000₽</span>
+											</div>
+										</li>
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">2 Га</span>
+												<span class="list-hero-slide__line"></span>
+												<span class="list-hero-slide__text">от 90 000₽</span>
+											</div>
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">3 Га</span>
+												<span class="list-hero-slide__line"></span>
+												<span class="list-hero-slide__text">от 110 000₽</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="slide-hero__footer footer-hero-slide">
+									<div class="footer-hero-slide__buttons" data-swiper-parallax="-200">
+										<a href="#" class="footer-hero-slide__button button">Подробнее</a>
+										<a href="#" class="footer-hero-slide__button button button_yellow">Заказать обратный звонок</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-hero__img-ibg">
+								<picture><source data-srcset="img/hero/3.webp" type="image/webp"><img data-src="img/hero/3.png" alt="Мост"></picture>
+							</div>
+						</div>
+						<div class="hero__slide slide-hero swiper-slide">
+							<div class="slide-hero__container">
+								<div class="slide-hero__body slide-hero__body_list-big">
+									<div class="slide-hero__title title title_big" data-swiper-parallax="-400">Геологические изыскания</div>
+									<ul class="slide-hero__list list-hero-slide" data-swiper-parallax="-500">
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">
+													Создание инженерно-топографических планов масштаба 1:500, рельеф 0.5 метра на
+													незастроенной территории
+												</span>
+												<span class="list-hero-slide__text">от 10 000₽ / Га</span>
+											</div>
+										</li>
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">Создание опорных геодезических сетей</span>
+												<span class="list-hero-slide__text">от 50 000₽ / пункт</span>
+											</div>
+										</li>
+										<li class="list-hero-slide__item">
+											<div class="list-hero-slide__column">
+												<span class="list-hero-slide__label">Дендрологические исследования</span>
+												<span class="list-hero-slide__text">от 40 000₽</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="slide-hero__footer footer-hero-slide">
+									<div class="footer-hero-slide__buttons" data-swiper-parallax="-200">
+										<a href="#" class="footer-hero-slide__button button">Подробнее</a>
+										<a href="#" class="footer-hero-slide__button button button_yellow">Заказать обратный звонок</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide-hero__img-ibg">
+								<picture><source data-srcset="img/hero/4.webp" type="image/webp"><img data-src="img/hero/4.png" alt="Мост"></picture>
 							</div>
 						</div>
 					</div>
@@ -105,13 +205,13 @@
 								<!-- Если нужна пагинация -->
 								<div class="swiper-nav__pagin swiper-pagination"></div>
 								<!-- Если нужна навигация (влево/вправо) -->
-								<div class="swiper-nav__buttons swiper-buttons">
-									<button data-da=".swiper-nav__general,767.98,first" type="button" class="swiper-buttons__prev">
+								<div class="swiper-nav__buttons swiper-buttons swiper-buttons_white">
+									<button data-da=".swiper-nav__general,767.98,first" type="button" class="swiper-buttons__button swiper-buttons__prev">
 										<svg width="55" height="13" viewBox="0 0 55 13">
 											<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
 										</svg>
 									</button>
-									<button data-da=".swiper-nav__general,767.98,2" type="button" class="swiper-buttons__next">
+									<button data-da=".swiper-nav__general,767.98,2" type="button" class="swiper-buttons__button swiper-buttons__next">
 										<svg width="55" height="13" viewBox="0 0 55 13">
 											<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
 										</svg>
@@ -121,9 +221,495 @@
 									<span class="swiper-custom-fractions__current">01</span><span> - </span><span class="swiper-custom-fractions__all">0</span>
 								</div>
 								<div class="swiper-nav__general"></div>
+
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section class="page__why why">
+				<div class="why__container">
+					<div class="why__name-block name-block">
+						<h2 class="name-block__title title">
+							Инженерные изыскания – это неотъемлемая часть проектной деятельности, обеспечивающая всестороннее изучение природных и
+							техногенных условий местности планируемого строительства.
+						</h2>
+					</div>
+					<div class="why__body content">
+						<div class="content__body">
+							<div class="content__column content__column_first">
+								<div class="content__title title title_small title_yellow title_courier">Зачем нужны инженерные изыскания?</div>
+							</div>
+							<div class="content__column">
+								<p class="content__text text text_gray">Проведение инженерных работ позволяет получить объем необходимых данных для
+									аргументирования
+									технической возможности и экономической целесообразности проектирования и застройки на конкретной территории.
+									Информировать
+									о возможных рисках и изменениях геологической ситуации и окружающей среды, связанных со строительством и эксплуатацией
+									объекта, разработать мероприятия по охране и защите природы и населения от влияния техногенных факторов.</p>
+								<p class="content__text text text_gray">Проведение инженерных исследований – первый этап грамотного проектирования и
+									строительства. Без
+									изыскательских работ невозможно получить разрешение на строительство, разработать безупречный проект, пройти экспертизу.
+								</p>
+								<a href="#" class="content__link link"><span>Подробнее</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__main-directions main-directions">
+				<div class="main-directions__container">
+					<div class="main-directions__name-block name-block">
+						<h2 class="name-block__title title">
+							Освновные виды <br> инжерерных изысканий
+						</h2>
+					</div>
+					<div class="main-directions__body content">
+						<div class="content__body">
+							<div class="content__column content__column_first">
+								<div class="content__title title title_small title_yellow title_courier">Главные направления <br> деятельности</div>
+							</div>
+							<div class="content__column">
+								<div class="content__card card-content">
+									<div class="card-content__img">
+										<img data-src="img/main-directions/1.svg" alt="Камень">
+									</div>
+									<div class="card-content__body">
+										<div class="card-content__title">Геологические</div>
+										<div class="card-content__text text text_gray">Получение востребованных материалов исследований для обоснования
+											возможностей проектирования и стройки в существующей геологической ситуации</div>
+										<a href="#" class="card-content__link link"><span>Подробнее</span></a>
+									</div>
+								</div>
+								<div class="content__card card-content">
+									<div class="card-content__img">
+										<img data-src="img/main-directions/2.svg" alt="Камень">
+									</div>
+									<div class="card-content__body">
+										<div class="card-content__title">Геодезические</div>
+										<div class="card-content__text text text_gray">Комплексные мероприятия по изучению и анализу ситуационных данных о
+											рельефе земельного участка, его гидросети, растительности, текущем использовании, наличии и расположении зданий и
+											сооружений, линейных объектов, наземных и подземных коммуникаций</div>
+										<a href="#" class="card-content__link link"><span>Подробнее</span></a>
+									</div>
+								</div>
+								<div class="content__card card-content">
+									<div class="card-content__img">
+										<img data-src="img/main-directions/3.svg" alt="Камень">
+									</div>
+									<div class="card-content__body">
+										<div class="card-content__title">Экологические</div>
+										<div class="card-content__text text text_gray">Мероприятия по изучению и мониторингу текущего состояния окружающей
+											среды, прогнозирование вероятных негативных изменений экосистемы от социально-экономических факторов и техногенной
+											нагрузки</div>
+										<a href="#" class="card-content__link link"><span>Подробнее</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__high-quality high-quality">
+				<div class="high-quality__container">
+					<div class="high-quality__body content-short">
+						<div class="content-short__body">
+							<div class="content-short__column content-short__column_first">
+								<div class="content-short__title title">
+									Высокое качество работы <br> в наших проектах
+								</div>
+								<p class="content-short__text text text_gray">
+									Мы успешно выполнили инженерно-гидрогеологические изыскания десятков проектов на территории Москвы и
+									области, в том числе Москва-Сити, м.Окская, Авиапарк, завод ЗИЛ
+								</p>
+							</div>
+							<div class="content-short__column">
+								<div class="content-short__number-block number-block">
+									<span class="number-block__label">Более</span>
+									<span class="number-block__body">6</span>
+									<span class="number-block__label">Крупных проектов</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__slider-projects slider-projects">
+				<div class="slider-projects__container">
+					<div class="slider-projects__body">
+						<div data-tabs class="slider-projects__tabs">
+							<div class="slider-projects__sidebar">
+								<nav data-tabs-titles class="slider-projects__navigation">
+									<button type="button" class="slider-projects__title _tab-active">Москва-Сити</button>
+									<button type="button" class="slider-projects__title">Стадион «Спартак»</button>
+									<button type="button" class="slider-projects__title">ТРК «Авиапарк»</button>
+									<button type="button" class="slider-projects__title">АТК на Кутузовском</button>
+									<button type="button" class="slider-projects__title">Завод «ЗИЛ»</button>
+									<button type="button" class="slider-projects__title">Станция «Окская»</button>
+								</nav>
+								<div class="slider-projects__swiper-nav swiper-nav swiper-nav_jus-stretch swiper-nav_white _not-build">
+									<div class="swiper-nav__body">
+										<div class="swiper-nav__buttons swiper-buttons swiper-buttons_white">
+											<button type="button" class="swiper-buttons__button swiper-buttons__prev">
+												<svg width="55" height="13" viewBox="0 0 55 13">
+													<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
+												</svg>
+											</button>
+											<button type="button" class="swiper-buttons__button swiper-buttons__next">
+												<svg width="55" height="13" viewBox="0 0 55 13">
+													<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-tabs-body class="slider-projects__content projects-slider" data-gallery>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="projects-slider__body">
+									<div class="projects-slider__slider swiper">
+										<div class="projects-slider__wrapper swiper-wrapper">
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/1.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/1.webp" type="image/webp"><img src="img/slider-projects/1.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Renaissance Moscow Towers</div>
+													<div class="slide-slider-projects__date">2013</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/2.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/2.webp" type="image/webp"><img src="img/slider-projects/2.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башня "России"</div>
+													<div class="slide-slider-projects__date">2007-2008</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+											<div class="projects-slider__slide slide-slider-projects swiper-slide">
+												<a href="img/slider-projects/3.png" class="slide-slider-projects__image-ibg" data-gallery-item>
+													<picture><source srcset="img/slider-projects/3.webp" type="image/webp"><img src="img/slider-projects/3.png" alt=""></picture>
+												</a>
+												<div class="slide-slider-projects__body">
+													<div class="slide-slider-projects__title">Башни "Око"</div>
+													<div class="slide-slider-projects__date">2007</div>
+												</div>
+												<a href="#" class="slide-slider-projects__link link"><span>Подробнее</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__stages stages">
+				<div class="stages__container">
+					<div class="stages__name-block name-block">
+						<h2 class="name-block__title title">
+							Как мы работаем
+						</h2>
+					</div>
+					<div class="stages__body">
+						<div class="stages__left">
+							<div class="stages__slider-buttons slider-stages-buttons swiper">
+								<div class="slider-stages-buttons__swiper swiper-wrapper">
+									<div class="slider-stages-buttons__slide slide-stages swiper-slide">
+										<button type="button" class="slide-stages__item">
+											<div class="slide-stages__number"><span>1</span></div>
+											<span class="slide-stages__label">Подготовка</span>
+										</button>
+									</div>
+									<div class="slider-stages-buttons__slide slide-stages swiper-slide">
+										<button type="button" class="slide-stages__item">
+											<div class="slide-stages__number"><span>2</span></div>
+											<span class="slide-stages__label">Организация</span>
+										</button>
+									</div>
+									<div class="slider-stages-buttons__slide slide-stages swiper-slide">
+										<button type="button" class="slide-stages__item">
+											<div class="slide-stages__number"><span>3</span></div>
+											<span class="slide-stages__label">Проведение изысканий</span>
+										</button>
+									</div>
+									<div class="slider-stages-buttons__slide slide-stages swiper-slide">
+										<button type="button" class="slide-stages__item">
+											<div class="slide-stages__number"><span>4</span></div>
+											<span class="slide-stages__label">Экспертиза</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stages__right">
+							<div class="stages__slider-body slider-body-stages swiper">
+								<div class="slider-body-stages__wrapper swiper-wrapper">
+									<div class="slider-body-stages__slide slide-body-stages swiper-slide">
+										<div class="slide-body-stages__content">
+											<div class="slide-body-stages__title title title_medium title_upper-none">Подготовка</div>
+											<div class="slide-body-stages__text text text_gray">В этот период происходит постановка задач инженерных изысканий,
+												горячее обсуждение и утверждение необходимого технического задания, подготавливается договорная документация и
+												проверяются исходные данные. После проработки этих важных моментов, заключается договор</div>
+										</div>
+									</div>
+									<div class="slider-body-stages__slide slide-body-stages swiper-slide">
+										<div class="slide-body-stages__content">
+											<div class="slide-body-stages__title title title_medium title_upper-none">Подготовка</div>
+											<div class="slide-body-stages__text text text_gray">В этот период происходит постановка задач инженерных изысканий,
+												горячее обсуждение и утверждение необходимого технического задания, подготавливается договорная документация и
+												проверяются исходные данные. После проработки этих важных моментов, заключается договор</div>
+										</div>
+									</div>
+									<div class="slider-body-stages__slide slide-body-stages swiper-slide">
+										<div class="slide-body-stages__content">
+											<div class="slide-body-stages__title title title_medium title_upper-none">Подготовка</div>
+											<div class="slide-body-stages__text text text_gray">В этот период происходит постановка задач инженерных изысканий,
+												горячее обсуждение и утверждение необходимого технического задания, подготавливается договорная документация и
+												проверяются исходные данные. После проработки этих важных моментов, заключается договор</div>
+										</div>
+									</div>
+									<div class="slider-body-stages__slide slide-body-stages swiper-slide">
+										<div class="slide-body-stages__content">
+											<div class="slide-body-stages__title title title_medium title_upper-none">Подготовка</div>
+											<div class="slide-body-stages__text text text_gray">В этот период происходит постановка задач инженерных изысканий,
+												горячее обсуждение и утверждение необходимого технического задания, подготавливается договорная документация и
+												проверяются исходные данные. После проработки этих важных моментов, заключается договор</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-body-stages__nav swiper-nav swiper-nav_jus-stretch swiper-nav_white _not-build">
+								<div class="swiper-nav__body">
+									<div class="swiper-nav__buttons swiper-buttons swiper-buttons_white">
+										<button type="button" class="swiper-buttons__button swiper-buttons__prev">
+											<svg width="55" height="13" viewBox="0 0 55 13">
+												<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
+											</svg>
+										</button>
+										<button type="button" class="swiper-buttons__button swiper-buttons__next">
+											<svg width="55" height="13" viewBox="0 0 55 13">
+												<path d="M54.0532 6.61019L1 6.6102M1 6.6102L6.61002 12.2202M1 6.6102L6.61002 1.00017">
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -143,7 +729,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220410004835"></script>
+	<script src="js/app.min.js?_v=20220419160944"></script>
 </body>
 
 </html>
