@@ -24,16 +24,8 @@ export function cursor() {
       document.addEventListener('mousemove', cursorMove);
       document.addEventListener('mousedown', cursorDown);
       document.addEventListener('mouseup', cursorUp);
-
-      document.addEventListener('mouseout', () => {
-        cursor.classList.add('hidden');
-        cursorAura.classList.add('hidden');
-      });
-
-      document.addEventListener('mouseover', () => {
-        cursor.classList.remove('hidden');
-        cursorAura.classList.remove('hidden');
-      });
+      document.addEventListener('mouseout', cursorOut);
+      document.addEventListener('mouseover', cursorOver);
 
       function cursorMove(e) {
         if (!cursor.classList.contains('hidden') && !cursorAura.classList.contains('hidden')) {
@@ -58,12 +50,18 @@ export function cursor() {
           cursorAura.style.top = `${cursorParams.auraTop}px`;
         }
       }
-
+      function cursorOver() {
+        cursor.classList.remove('hidden');
+        cursorAura.classList.remove('hidden');
+      }
+      function cursorOut() {
+        cursor.classList.add('hidden');
+        cursorAura.classList.add('hidden');
+      }
       function cursorDown() {
         cursor.classList.add('click');
         cursorAura.classList.add('click');
       }
-
       function cursorUp() {
         cursor.classList.remove('click');
         cursorAura.classList.remove('click');
