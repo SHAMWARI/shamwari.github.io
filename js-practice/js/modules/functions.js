@@ -28,6 +28,13 @@ export function cursor() {
       document.addEventListener('mouseover', cursorOver);
 
       function cursorMove(e) {
+        const cursorParams = {
+          left: e.clientX,
+          auraLeft: e.clientX,
+          top: e.clientY,
+          auraTop: e.clientY,
+        };
+
         if (!cursor.classList.contains('hidden') && !cursorAura.classList.contains('hidden')) {
           if (e.target.getAttribute('data-hover') === 'true') {
             cursor.classList.add('active');
@@ -36,13 +43,6 @@ export function cursor() {
             cursor.classList.remove('active');
             cursorAura.classList.remove('active');
           }
-
-          const cursorParams = {
-            left: e.clientX,
-            auraLeft: e.clientX,
-            top: e.clientY,
-            auraTop: e.clientY,
-          };
 
           cursor.style.left = `${cursorParams.left}px`;
           cursorAura.style.left = `${cursorParams.auraLeft}px`;

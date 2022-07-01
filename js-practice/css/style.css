@@ -35,13 +35,14 @@ body {
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 1;
   text-rendering: optimizelegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  color: #000;
+  color: #fff;
+  background-color: #333;
 }
 
 input,
@@ -124,7 +125,6 @@ h6 {
 .menu__dropdown {
   position: relative;
   text-transform: uppercase;
-  color: #fd001e;
   transition: color 0.2s ease 0s;
 }
 
@@ -181,26 +181,20 @@ h6 {
 
 .cursor {
   position: fixed;
-  left: -50%;
-  top: -50%;
   z-index: 100;
-  border-radius: 50%;
-  width: 5px;
-  height: 5px;
-  background-color: #ffb5ff;
+  border-radius: 100%;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
   transform: translate(-50%, -50%);
   transition: transform 0.6s ease 0s, opacity 0.3s ease 0s;
   pointer-events: none;
 }
 
-.cursor.active {
-  transform: scale(0);
-}
-
 .cursor.click {
-  width: 3px;
-  height: 3px;
-  transition: all 0.1s linear 0s;
+  width: 4px;
+  height: 4px;
+  transition: width 0.1s ease 0s, height 0.1s ease 0s;
 }
 
 .cursor.hidden {
@@ -209,29 +203,37 @@ h6 {
 
 .cursorAura {
   position: fixed;
-  left: -50%;
-  top: -50%;
   z-index: 100;
-  border: 2px solid #f0f;
+  border: 2px solid #950295;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   transform: translate(-50%, -50%);
   transition: all 0.1s linear 0s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   pointer-events: none;
+}
+
+@keyframes animation-aura {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .cursorAura.active {
   border-radius: 0;
-  width: 30px;
-  height: 30px;
-  transition: top linear 0.1s 0s, left linear 0.1s 0s, width 0.3s ease 0s, height 0.3s ease 0s, border-radius 0.3s ease 0s;
+  animation-name: animation-aura;
 }
 
 .cursorAura.click {
   width: 20px;
   height: 20px;
-  transition: all 0.1s ease 0s;
 }
 
 .cursorAura.hidden {
