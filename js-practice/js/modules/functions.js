@@ -17,6 +17,13 @@ export function dropdown() {
 
 export function cursor() {
   if (!document.documentElement.classList.contains('touch')) {
+    document.body.insertAdjacentHTML(
+      'beforeend',
+      `
+        <div class="cursor"></div>
+        <div class="cursorAura"></div>
+      `
+    );
     const cursor = document.querySelector('.cursor');
     const cursorAura = document.querySelector('.cursorAura');
 
