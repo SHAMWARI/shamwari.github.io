@@ -63,6 +63,7 @@ export class Cursor {
     this.cursor.style.top = `${cursorParams.top}px`;
     this.cursorAura.style.top = `${cursorParams.top}px`;
   };
+  
   cursorOver = () => {
     this.cursor.classList.remove('hidden');
     this.cursorAura.classList.remove('hidden');
