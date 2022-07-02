@@ -17,8 +17,8 @@ export function dropdown() {
 
 export class Cursor {
   constructor() {
-    this._cursor;
-    this._cursorAura;
+    this.cursor;
+    this.cursorAura;
   }
 
   init() {
