@@ -26,9 +26,9 @@ export class Cursor {
       document.body.insertAdjacentHTML(
         'afterbegin',
         `
-        <div class="cursor"></div>
-        <div class="cursorAura"></div>
-      `
+          <div class="cursor"></div>
+          <div class="cursorAura"></div>
+        `
       );
 
       this.cursor = document.querySelector('.cursor');
