@@ -187,14 +187,13 @@ h6 {
   height: 6px;
   background-color: #fff;
   transform: translate(-50%, -50%);
-  transition: transform 0.6s ease 0s, opacity 0.3s ease 0s;
+  transition: width 0.1s ease, height 0.1s ease, opacity 0.3s ease;
   pointer-events: none;
 }
 
 .cursor.click {
   width: 4px;
   height: 4px;
-  transition: width 0.1s ease 0s, height 0.1s ease 0s;
 }
 
 .cursor.hidden {
@@ -209,25 +208,14 @@ h6 {
   width: 22px;
   height: 22px;
   transform: translate(-50%, -50%);
-  transition: all 0.1s linear 0s;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  transition: top 0.1s linear, left 0.1s linear, opacity 0.3s ease;
+  animation: 1s linear infinite;
   pointer-events: none;
-}
-
-@keyframes animation-aura {
-  from {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 
 .cursorAura.active {
   border-radius: 0;
+  transition: top 0.05s linear, left 0.05s linear, opacity 0.3s ease;
   animation-name: animation-aura;
 }
 
@@ -238,4 +226,14 @@ h6 {
 
 .cursorAura.hidden {
   opacity: 0;
+}
+
+@keyframes animation-aura {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

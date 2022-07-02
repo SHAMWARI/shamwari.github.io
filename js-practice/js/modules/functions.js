@@ -15,64 +15,71 @@ export function dropdown() {
   }
 }
 
-export function cursor() {
-  if (!document.documentElement.classList.contains('touch')) {
-    document.body.insertAdjacentHTML(
-      'beforeend',
-      `
+export class Cursor {
+  constructor() {
+    this._cursor;
+    this._cursorAura;
+  }
+
+  init() {
+    if (!document.documentElement.classList.contains('touch')) {
+      document.body.insertAdjacentHTML(
+        'afterbegin',
+        `
         <div class="cursor"></div>
         <div class="cursorAura"></div>
       `
-    );
-    const cursor = document.querySelector('.cursor');
-    const cursorAura = document.querySelector('.cursorAura');
+      );
 
-    if (cursor && cursorAura) {
-      document.addEventListener('mousemove', cursorMove);
-      document.addEventListener('mousedown', cursorDown);
-      document.addEventListener('mouseup', cursorUp);
-      document.addEventListener('mouseout', cursorOut);
-      document.addEventListener('mouseover', cursorOver);
+      this.cursor = document.querySelector('.cursor');
+      this.cursorAura = document.querySelector('.cursorAura');
 
-      function cursorMove(e) {
-        const cursorParams = {
-          left: e.clientX,
-          auraLeft: e.clientX,
-          top: e.clientY,
-          auraTop: e.clientY,
-        };
-
-        if (!cursor.classList.contains('hidden') && !cursorAura.classList.contains('hidden')) {
-          if (e.target.getAttribute('data-hover') === 'true') {
-            cursor.classList.add('active');
-            cursorAura.classList.add('active');
-          } else if (cursor.classList.contains('active') && cursorAura.classList.contains('active')) {
-            cursor.classList.remove('active');
-            cursorAura.classList.remove('active');
-          }
-
-          cursor.style.left = `${cursorParams.left}px`;
-          cursorAura.style.left = `${cursorParams.auraLeft}px`;
-          cursor.style.top = `${cursorParams.top}px`;
-          cursorAura.style.top = `${cursorParams.auraTop}px`;
-        }
-      }
-      function cursorOver() {
-        cursor.classList.remove('hidden');
-        cursorAura.classList.remove('hidden');
-      }
-      function cursorOut() {
-        cursor.classList.add('hidden');
-        cursorAura.classList.add('hidden');
-      }
-      function cursorDown() {
-        cursor.classList.add('click');
-        cursorAura.classList.add('click');
-      }
-      function cursorUp() {
-        cursor.classList.remove('click');
-        cursorAura.classList.remove('click');
+      if (!document.documentElement.classList.contains('touch') && this.cursor && this.cursorAura) {
+        document.addEventListener('mousemove', this.cursorMove);
+        document.addEventListener('mousedown', this.cursorDown);
+        document.addEventListener('mouseup', this.cursorUp);
+        document.addEventListener('mouseout', this.cursorOut);
+        document.addEventListener('mouseover', this.cursorOver);
       }
     }
   }
+
+  cursorMove = (e) => {
+    const cursorParams = {
+      left: e.clientX,
+      top: e.clientY,
+    };
+
+    if (e.target.getAttribute('data-hover') === 'true') {
+      this.cursor.classList.add('active');
+      this.cursorAura.classList.add('active');
+    } else if (this.cursor.classList.contains('active') && this.cursorAura.classList.contains('active')) {
+      this.cursor.classList.remove('active');
+      this.cursorAura.classList.remove('active');
+    }
+
+    this.cursor.style.left = `${cursorParams.left}px`;
+    this.cursorAura.style.left = `${cursorParams.left}px`;
+    this.cursor.style.top = `${cursorParams.top}px`;
+    this.cursorAura.style.top = `${cursorParams.top}px`;
+  };
+  cursorOver = () => {
+    this.cursor.classList.remove('hidden');
+    this.cursorAura.classList.remove('hidden');
+  };
+
+  cursorOut = () => {
+    this.cursor.classList.add('hidden');
+    this.cursorAura.classList.add('hidden');
+  };
+
+  cursorDown = () => {
+    this.cursor.classList.add('click');
+    this.cursorAura.classList.add('click');
+  };
+
+  cursorUp = () => {
+    this.cursor.classList.remove('click');
+    this.cursorAura.classList.remove('click');
+  };
 }
